@@ -15,6 +15,8 @@ const getAge = (birthday) => {
 
 kofiWidgetOverlay.draw("f1w3_", {
     "type": "floating-chat",
+    "floating-chat.donateButton.position": "absolute",
+    "floating-chat.donateButton.right": "0",
     "floating-chat.donateButton.text": "Support Us",
     "floating-chat.donateButton.background-color": "#323842",
     "floating-chat.donateButton.text-color": "#fff"

@@ -6,15 +6,15 @@
 
 @font-face {
     font-family: "Manrope";
-    src: url(./assets/Manrope.ttf);
+    src: url(../assets/Manrope.ttf);
 }
 
 body {
     background-color: #252525;
     user-select: none;
     display: flex;
-    flex-direction: left;
-    justify-content: left;
+    flex-direction: center;
+    justify-content: center;
     align-items: top;
     width: calc(100%);
     height: calc(100%);
@@ -27,6 +27,22 @@ body {
     color: #cecece;
     width: 100%;
     border-bottom: 4px solid #cecece;
+    flex-direction: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.title>.icons {
+    position: relative;
+    flex-direction: center;
+    justify-content: center;
+    text-align: center;
+    right: 0;
+    bottom: 0;
+    display: inline;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 1s;
 }
 
 .aboutme {
@@ -55,17 +71,39 @@ body {
     font-size: 1.5rem;
 }
 
-.other {
+.production {
+    flex-direction: center;
+    justify-content: center;
     font-family: "Manrope";
     margin: 20px;
-    text-align: left;
+    width: 100%;
+    text-align: center;
     font-size: 3rem;
     color: #cecece;
 }
 
-.other>div {
-    display: inline;
+.production>div {
+    color: #cecece;
     font-size: 1.5rem;
-    cursor: pointer;
-    transition: 1s;
+}
+
+a[href^="http"] {
+    color: #cecece;
+}
+
+a[href^="http"]:hover {
+    color: #cecece;
+}
+
+a[href^="http"]:visited {
+    color: #cecece;
+}
+
+
+a[href^="http"]:after {
+    margin: 0 0 0 3px;
+    font-family: "Font Awesome 5 Free";
+    content: '\f35d';
+    font-weight: 900;
+    color: #cecece;
 }
