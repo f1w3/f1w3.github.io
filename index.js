@@ -24,5 +24,3 @@ kofiWidgetOverlay.draw("f1w3_", {
 
 age.innerText = getAge(birthday)
 github.addEventListener("click", e => window.open("https://github.com/javascriptjp"))
-twitter.addEventListener("click", e => window.open("https://twitter.com/soso74131344"))
-discord.addEventListener("click", e => window.open("https://discord.gg/QX2YnASVX4"))
