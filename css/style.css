@@ -4,106 +4,138 @@
     box-sizing: border-box;
 }
 
-@font-face {
-    font-family: "Manrope";
-    src: url(../assets/Manrope.ttf);
-}
-
 body {
-    background-color: #252525;
+    visibility: visible;
     user-select: none;
-    display: flex;
     flex-direction: center;
     justify-content: center;
-    align-items: top;
-    width: calc(100%);
-    height: calc(100%);
-    flex-wrap: wrap;
+    text-align: center;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    background-color: #070707;
+    color: #dadada;
 }
 
 .title {
-    font-family: "Manrope";
-    font-size: 5rem;
-    color: #cecece;
-    width: 100%;
-    border-bottom: 4px solid #cecece;
-    flex-direction: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.title>.icons {
     position: relative;
+    font-size: 4rem;
     flex-direction: center;
     justify-content: center;
     text-align: center;
-    right: 0;
-    bottom: 0;
-    display: inline;
-    font-size: 1.5rem;
-    cursor: pointer;
-    transition: 1s;
 }
 
-.aboutme {
-    font-family: "Manrope";
-    margin: 20px;
-    text-align: left;
-    font-size: 3rem;
+.about {
+    position: relative;
+    padding-top: 2rem;
+    font-size: 2.5rem;
+}
+
+.about > .aboutme {
+    position: relative;
+    font-size: 2.5rem;
+}
+
+.about > .aboutin {
+    position: relative;
+    font-size: 2rem;
+}
+
+.about .name{
+    position: relative;
+    padding-top: 2rem;
+    font-size: 1.75rem;
+}
+
+.about .namein {
+    position: relative;
+}
+
+.about .agein {
+    position: relative;
+    font-size: 1.75rem;
+}
+
+.about .description {
+    position: relative;
+    padding-top: 2rem;
+    font-size: 1.75rem;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.fadein {
+    opacity : 0;
+    transition : all 0.3s;
+}
+
+.fadein.active{
+    opacity : 1;
+}
+
+.description .language {
+    display: none;
+    text-align: center;
+}
+
+.description .language.appear {
+    display: block;
+    animation: 2s language-fadeIn;
+}
+
+@keyframes language-fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.repo {
+    position: relative;
+    padding-top: 4rem;
+    font-size: 2.5rem;
+}
+
+.repo > .repo-info {
+    position: relative;
+    font-size: 2.5rem;
+}
+
+.repo > .repo-list {
+    position: relative;
+    padding-top: 1.5rem;
+    font-size: 1.75rem;
+}
+
+.repo > .repo-list > .repo-child {
+    position: relative;
+}
+
+a {
     color: #cecece;
 }
 
-.aboutme>div {
+a:hover {
     color: #cecece;
-    font-size: 1.5rem;
+}
+
+a:visited {
+    color: #cecece;
 }
 
 .contact {
-    font-family: "Manrope";
-    margin: 20px;
-    text-align: left;
-    font-size: 3rem;
-    color: #cecece;
+    position: relative;
+    padding-top: 4rem;
+    font-size: 2.5rem;
 }
 
-.contact>div {
-    color: #cecece;
+.contact > .contact-info {
+    position: relative;
+    font-size: 2.5rem;
+}
+
+.contact  > .contact-child {
     font-size: 1.5rem;
-}
-
-.production {
-    flex-direction: center;
-    justify-content: center;
-    font-family: "Manrope";
-    margin: 20px;
-    width: 100%;
-    text-align: center;
-    font-size: 3rem;
-    color: #cecece;
-}
-
-.production>div {
-    color: #cecece;
-    font-size: 1.5rem;
-}
-
-a[href^="http"] {
-    color: #cecece;
-}
-
-a[href^="http"]:hover {
-    color: #cecece;
-}
-
-a[href^="http"]:visited {
-    color: #cecece;
-}
-
-
-a[href^="http"]:after {
-    margin: 0 0 0 3px;
-    font-family: "Font Awesome 5 Free";
-    content: '\f35d';
-    font-weight: 900;
-    color: #cecece;
 }

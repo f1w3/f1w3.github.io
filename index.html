@@ -1,55 +1,69 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="application-name" content="javascriptjp" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="”keyword”" content="javascriptjp" />
+        <meta name="description" content="portfolio website for javascriptjp" />
+        <meta property="og:title" content="javascriptjp" />
+        <meta property="og:description" content="javascriptjp portfolio" />
+        <meta property="og:type" content="Portfolio" />
+        <meta property="og:url" content="https://javascriptjp.github.io/" />
+        <meta property="og:site_name" content="javascriptjp" />
+        <meta property="og:locale" content="ja_JP" />
+        <meta property="og:image" content="/assets/favicon.ico" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@f1w3_" />
+        <meta name="theme-color" content="#070707" />
+        <meta name="cXenseParse:pageclass" content="article" />
+        <link rel="canonical" href="https://javascriptjp.github.io/" />
+        <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico" />
+        <link rel="icon" href="/assets/favicon.ico" />
+        <title>javascriptjp</title>
+        <style>
+            body {
+                background-color: #070707;
+                visibility: hidden;
+            }
+        </style>
+        <link rel="preload" href="/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <script src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js" defer></script>
+        <script src="/js/index.js" defer></script>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <title>javascriptjp</title>
-    <link rel="stylesheet" href="css/fontawesome.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <meta property="og:title" content="javascriptjp | home" />
-    <meta property="og:description" content="javascriptjp | Soso | realcollaboration inc" />
-    <meta property="og:type" content="Portfolio" />
-    <meta property="og:url" content="https://javascriptjp.github.io/" />
-    <meta property="og:site_name" content="javascriptjp portfolio" />
-</head>
-
-<body>
-    <div class="title">
-        javascriptjp
-        <span class="icons">
-            <span class="github">
-                <img src="./assets/github.svg" alt="github" width="80px" id="github" />
-            </span>
-        </span>
-    </div>
-    <div class="aboutme">
-        about me
-        <div class="name">
-            Name: <span id="name">Soso</span>
+    <body>
+        <div class="title">javascriptjp</div>
+        <div class="about">
+            <div class="aboutme fadein">About Me</div>
+            <div class="name aboutin fadein">
+                My name is <span class="namein bold fadein">javascriptjp</span>
+            </div>
+            <div class="age aboutin fadein">
+                I'm <span class="agein bold fadein">17</span> years old
+            </div>
+            <div class="language aboutin fadein">
+                My language is <span class="agein bold fadein">Japanese</span>
+            </div>
+            <div class="description aboutin fadein">
+                <p>
+                    I'm a student specializing in
+                    <span class="bold fadein">javascript</span>
+                </p>
+            </div>
         </div>
-        <div class="age">
-            Age: <span id="age">16</span>
+        <div class="repo">
+            <div class="repo-info fadein">Repositories</div>
+            <div class="repo-list"></div>
         </div>
-        <div class="lang">
-            Lang: <span id="lang">japanese</span>
+        <div class="contact">
+            <div class="contact-info fadein">Contact</div>
+            <div class="contact-child fadein"><a href="https://github.com/javascriptjp" target="_blank">Github : <span class="bold fadein">javascriptjp</span></a></div>
+            <div class="contact-child fadein">Discord : <span class="bold fadein">yuiscript</span></div>
+            <div class="contact-child fadein">X(Twitter) : <span class="bold fadein">soon</span></div>
         </div>
-        <div class="work">
-            Work: <span id="work">RealCollaboration Inc.</span>
-        </div>
-    </div>
-    <div class="contact">
-        contact
-        <div class="discord">
-            Discord: Soso#2822
-        </div>
-    </div>
-    <div class="production">
-        production
-        <div><a href="https://github.com/javascriptjp/BossBarAssistant" target="_blank">BossBarAssistant</a></div>
-        <div><a href="https://github.com/javascriptjp/toGIF" target="_blank">toGIF</a></div>
-    </div>
-    <script src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js" defer></script>
-    <script src="index.js" defer></script>
-</body>
-
+    </body>
 </html>
