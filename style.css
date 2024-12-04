@@ -1,0 +1,625 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #111111;
+    /* overflow: hidden; */
+    color: #fff;
+    font-family: "Kosugi Maru", Consolas, monospace, sans-serif;
+    text-wrap: nowrap;
+}
+
+@media (max-width: 490px) {
+    body {
+        overflow: visible;
+    }
+}
+
+::selection {
+    background-color: #fff;
+    color: #111111;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+    background-color: #111111;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 2px;
+    background-color: #fff;
+}
+
+.my {
+    margin-top: 100px;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.my .name {
+    font-size: 50px;
+}
+
+.my .language {
+    font-size: 20px;
+}
+
+.my .icon {
+    width: 250px;
+    height: 250px;
+    border-radius: 15%;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+}
+
+@media (max-width: 490px) {
+    .my {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .my .icon {
+        margin-top: 20px;
+    }
+}
+
+.snslist {
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    height: 40px;
+    background-color: #111111;
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+.editor {
+    margin-top: 50px;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.window {
+    width: 70%;
+    height: 100%;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px #ffffff5b;
+    position: relative;
+    display: flex;
+    flex-flow: wrap;
+}
+
+.titlebar {
+    background-color: #181818;
+    width: 100%;
+    height: 36px;
+    position: relative;
+    display: flex;
+    flex-flow: wrap;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    border-bottom: #2b2b2b 1px solid;
+}
+
+.titleinfo {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    background-color: #242424;
+    border: #454545 1px solid;
+    border-radius: 8px;
+    width: 250px;
+    height: 25px;
+    overflow: hidden;
+    margin-left: auto;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.titleinfo:hover {
+    background-color: #2b2b2b;
+    border: #535353 1px solid;
+}
+
+.titleinfo .infosearchicon {
+    margin-right: 4px;
+    font-size: 12px;
+}
+
+@media (max-width: 1515px) {
+    .titleinfo {
+        display: none;
+    }
+}
+
+.titlebuttons {
+    height: 36px;
+    width: calc(55px * 3);
+    margin-left: auto;
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.titlebuttons div {
+    background-color: #181818;
+    height: 36px;
+    width: 55px;
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: center;
+    color: #ffffffd5;
+    font-size: 12px;
+    transition: all 0.2s;
+}
+
+.titlebuttons div:hover {
+    background-color: #3d3d3d;
+    transition: all 0.2s;
+}
+
+.titlebuttons .closebutton:hover {
+    background-color: #e81123;
+    transition: all 0.2s;
+}
+
+.titleicon {
+    height: 36px;
+    width: 44px;
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    overflow: hidden;
+}
+
+.titlepagebuttons {
+    position: relative;
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    height: 36px;
+    width: max-content;
+    overflow: hidden;
+}
+
+.titlepagebuttons div {
+    border-radius: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 15px;
+    transition: all 0.2s;
+    cursor: default;
+}
+
+.titlepagebuttons div:hover {
+    background-color: #2d2e2e;
+    transition: all 0.2s;
+}
+
+.titlepagebuttons div::after {
+    content: "(" attr(data-key) ")";
+    font-size: 13px;
+}
+
+.titlepagebuttons svg {
+    border-radius: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 15px;
+    transition: all 0.2s;
+    cursor: pointer;
+    display: none;
+}
+
+.titlepagebuttons svg:hover {
+    background-color: #2d2e2e;
+    transition: all 0.2s;
+}
+
+@media (max-width: 1200px) {
+    .titlepagebuttons svg {
+        display: block;
+    }
+    .titlepagebuttons div:nth-child(8) {
+        display: none;
+    }
+}
+
+@media (max-width: 1110px) {
+    .titlepagebuttons div:nth-child(7) {
+        display: none;
+    }
+}
+
+@media (max-width: 970px) {
+    .titlepagebuttons div:nth-child(6) {
+        display: none;
+    }
+}
+
+@media (max-width: 880px) {
+    .titlepagebuttons div:nth-child(5) {
+        display: none;
+    }
+}
+
+@media (max-width: 810px) {
+    .titlepagebuttons div:nth-child(4) {
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    .titlepagebuttons div:nth-child(3) {
+        display: none;
+    }
+}
+
+@media (max-width: 550px) {
+    .titlepagebuttons div:nth-child(2) {
+        display: none;
+    }
+}
+
+@media (max-width: 440px) {
+    .titlepagebuttons div:nth-child(1) {
+        display: none;
+    }
+}
+
+.sidebuttons {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 44px;
+    height: 100%;
+    color: #ffffff60;
+    border-right: #2b2b2b 1px solid;
+}
+
+.sidebuttons div {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 44px;
+    font-size: 22px;
+    transition: all 0.2s, border 0s;
+    cursor: pointer;
+}
+
+.sidebuttons div.side__active {
+    color: #ffffff;
+    transition: all 0.2s;
+}
+
+.sidebuttons div::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 50px;
+    left: 0;
+    background-color: #ffffff00;
+    transition: all 0.2s;
+}
+
+.sidebuttons div.side__active::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 50px;
+    left: 0;
+    background-color: #fff;
+    transition: all 0.2s;
+}
+
+.sidebuttons div:hover {
+    background-color: #2d2e2e;
+    transition: all 0.2s;
+}
+
+.sitefiles {
+    position: relative;
+    height: 100%;
+    width: 16%;
+    top: 0;
+    border-right: #2b2b2b 1px solid;
+}
+
+.filesheader {
+    position: relative;
+    font-size: 13px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+.explorertitle {
+    margin-left: 15px;
+    margin-right: auto;
+    cursor: default;
+}
+
+.explorericon {
+    padding: 6px;
+    margin-left: auto;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 970px) {
+    .explorericon {
+        display: none;
+    }
+}
+
+.explorericon:hover {
+    background-color: #2d2e2e;
+}
+
+.explorerfiles {
+    position: relative;
+    width: 100%;
+    font-size: 13px;
+}
+
+.filestitlehel {
+    width: max-content;
+    width: 100%;
+    height: 25px;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: left;
+}
+
+.filestitlewapper {
+    position: relative;
+    font-size: 13px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+    margin-left: 10px;
+    overflow: hidden;
+}
+
+.filestitle {
+    margin-left: 10px;
+}
+
+.filestitleicons {
+    position: relative;
+    margin-left: auto;
+    margin-right: 10px;
+    display: none;
+}
+
+.filestitleicons svg {
+    border-radius: 3px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.filestitleicons svg:hover {
+    background-color: #2d2e2e;
+}
+
+.filestitlewapper:hover .filestitleicons {
+    display: block;
+}
+
+.explorerfiles {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    align-items: left;
+    justify-content: flex-start;
+}
+
+.filesfilewapper {
+    width: 100%;
+    height: 25px;
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: left;
+    cursor: pointer;
+}
+
+.filesfilewapper.files__active {
+    background-color: #2d2e2e;
+}
+
+.filesfilewapper:hover {
+    background-color: #2d2e2e;
+}
+
+.filesfile {
+    font-size: 14px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: left;
+    width: max-content;
+    margin-left: 26px;
+    overflow: hidden;
+}
+
+.filesname {
+    margin-left: 10px;
+}
+
+.filecontents {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: left;
+    width: calc(100% - 16% - 44px);
+}
+
+.contentnamewapper {
+    position: relative;
+    font-size: 12px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: left;
+    height: 34px;
+    width: 100%;
+    border-bottom: #2b2b2b 1px solid;
+}
+
+.contentfilename {
+    position: relative;
+    cursor: pointer;
+    border-right: #2b2b2b 1px solid;
+    overflow: hidden;
+    height: 34px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.contenticon {
+    font-size: 13px;
+}
+
+.contentname {
+    margin-left: 6px;
+}
+
+.contentclose {
+    margin-left: 7px;
+}
+
+.contentclose svg {
+    border-radius: 3px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.contentclose svg:hover {
+    background-color: #2d2e2e;
+}
+
+.filecontentwapper {
+    background-color: #1f1f1f;
+    cursor: text;
+    width: 100%;
+    height: calc(100% - 34px);
+}
+
+.filecontent {
+    position: relative;
+    margin-top: 5px;
+    font-size: 15px;
+    counter-reset: line-number;
+}
+
+.filecontent span {
+    padding-left: 2%;
+    margin-left: 4%;
+    counter-increment: line-number;
+    display: list-item;
+}
+
+.filecontent span::marker {
+    content: counter(line-number);
+    color: #6e7681;
+    cursor: default;
+}
+
+.filecontent span:focus {
+    outline: none;
+}
+
+@media (max-width: 950px) {
+    .editor {
+        height: 70vh;
+    }
+
+    .sidebuttons {
+        display: none;
+    }
+
+    .sitefiles {
+        display: none;
+    }
+
+    .filecontentwapper {
+        overflow: scroll;
+    }
+
+    .filecontents {
+        width: 100%;
+        height: 100%;
+    }
+
+    .filecontent {
+        margin-left: 15px;
+    }
+}
+
+
+.padding {
+    margin-top: 160px;
+}

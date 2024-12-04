@@ -1,70 +1,246 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="application-name" content="javascriptjp" />
+        <meta name="application-name" content="f1w3" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="viewport" content="width=device-width" />
-        <meta name="”keyword”" content="javascriptjp" />
-        <meta name="description" content="portfolio website for javascriptjp" />
-        <meta property="og:title" content="javascriptjp" />
-        <meta property="og:description" content="javascriptjp portfolio" />
+        <meta name="”keyword”" content="f1w3" />
+        <meta name="description" content="portfolio website for f1w3" />
+        <meta property="og:title" content="f1w3" />
+        <meta property="og:description" content="f1w3 portfolio" />
         <meta property="og:type" content="Portfolio" />
-        <meta property="og:url" content="https://javascriptjp.github.io/" />
-        <meta property="og:site_name" content="javascriptjp" />
+        <meta property="og:url" content="https://f1w3.github.io/" />
+        <meta property="og:site_name" content="f1w3" />
         <meta property="og:locale" content="ja_JP" />
         <meta property="og:image" content="/assets/favicon.ico" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@f1w3_" />
         <meta name="theme-color" content="#070707" />
         <meta name="cXenseParse:pageclass" content="article" />
-        <link rel="canonical" href="https://javascriptjp.github.io/" />
-        <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico" />
-        <link rel="icon" href="/assets/favicon.ico" />
-        <title>javascriptjp</title>
-        <style>
-            body {
-                background-color: #070707;
-                visibility: hidden;
-            }
-        </style>
-        <link rel="preload" href="/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-        <script src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js" defer></script>
-        <script src="/js/index.js" defer></script>
-        <meta name="google-site-verification" content="60dR2j4frUCNi6wu8mq9lF41hdAUM33qv2oOyWxEkGY" />
+        <link rel="canonical" href="https://f1w3.github.io/" />
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Kosugi|Kosugi+Maru"
+            rel="stylesheet"
+        />
+        <!-- reset.css ress -->
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/ress/dist/ress.min.css"
+        />
+        <link href="style.css" rel="stylesheet" />
+        <script src="script.js" async></script>
+        <script
+            src="https://kit.fontawesome.com/b3260d4c74.js"
+            crossorigin="anonymous"
+        ></script>
+        <title>f1w3</title>
     </head>
 
     <body>
-        <div class="title">javascriptjp</div>
-        <div class="about">
-            <div class="aboutme fadein">About Me</div>
-            <div class="name aboutin fadein">
-                My name is <span class="namein bold fadein">javascriptjp</span>
+        <div class="my">
+            <div class="container">
+                <div class="name">f1w3</div>
+                <div class="language">javascript/typescript</div>
             </div>
-            <div class="age aboutin fadein">
-                I'm <span class="agein bold fadein">17</span> years old
-            </div>
-            <div class="language aboutin fadein">
-                My language is <span class="agein bold fadein">Japanese</span>
-            </div>
-            <div class="description aboutin fadein">
-                <p>
-                    I'm a student specializing in
-                    <span class="bold fadein">javascript</span>
-                </p>
+            <img
+                class="icon"
+                src="/r918iaacaKSLur1.webp"
+                alt="f1w3 icon"
+            /><br />
+        </div>
+        <div class="editor">
+            <div class="window">
+                <div class="titlebar">
+                    <div class="titleicon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <div class="titlepagebuttons">
+                        <div data-key="F">File</div>
+                        <div data-key="E">Edit</div>
+                        <div data-key="S">Selection</div>
+                        <div data-key="V">View</div>
+                        <div data-key="G">Go</div>
+                        <div data-key="R">Run</div>
+                        <div data-key="T">Terminal</div>
+                        <div data-key="H">Help</div>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                    <div class="titleinfo">
+                        <span class="infosearchicon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                        <span id="__siteurl__">private repository</span>
+                    </div>
+                    <div class="titlebuttons">
+                        <div class="minimizebutton">
+                            <i class="fa-solid fa-window-minimize"></i>
+                        </div>
+                        <div class="maximizebutton">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+                        <div class="closebutton">
+                            <i class="fa-solid fa-x"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebuttons">
+                    <div class="side__active">
+                        <i class="fa-regular fa-file"></i>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-code-branch"></i>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-house-laptop"></i>
+                    </div>
+                </div>
+                <div class="sitefiles">
+                    <div class="filesheader">
+                        <div class="explorertitle">Explorer</div>
+                        <div class="explorericon">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                    </div>
+                    <div class="filestitlehel">
+                        <div class="filestitlewapper">
+                            <i class="fa-solid fa-chevron-down"></i>
+                            <div class="filestitle" id="__siteurl__"></div>
+                            <div class="filestitleicons">
+                                <i class="fa-solid fa-file-pen"></i>
+                                <i class="fa-solid fa-folder-plus"></i>
+                                <i class="fa-solid fa-rotate-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="explorerfiles">
+                        <div class="filesfilewapper files__active">
+                            <div class="filesfile">
+                                <div class="filesicon">
+                                    <i
+                                        class="fa-solid fa-m"
+                                        style="color: #74c0fc"
+                                    ></i>
+                                </div>
+                                <div class="filesname">README.md</div>
+                            </div>
+                        </div>
+                        <a
+                            href="https://github.com/f1w3/kuromoji.js"
+                            class="filesfilewapper"
+                        >
+                            <div class="filesfile">
+                                <div class="filesicon">
+                                    <i
+                                        class="fa-brands fa-js"
+                                        style="color: #ffd43b"
+                                    ></i>
+                                </div>
+                                <div class="filesname">@f1w3/kuromoji.js</div>
+                            </div>
+                        </a>
+                        <a
+                            href="https://github.com/f1w3/doublearray"
+                            class="filesfilewapper"
+                        >
+                            <div class="filesfile">
+                                <div class="filesicon">
+                                    <i
+                                        class="fa-brands fa-js"
+                                        style="color: #ffd43b"
+                                    ></i>
+                                </div>
+                                <div class="filesname">@f1w3/doublearray</div>
+                            </div>
+                        </a>
+                        <a
+                            href="https://github.com/f1w3/doublearray"
+                            class="filesfilewapper"
+                        >
+                            <div class="filesfile">
+                                <div class="filesicon">
+                                    <i
+                                        class="fa-solid fa-c"
+                                        style="color: #74c0fc"
+                                    ></i>
+                                </div>
+                                <div class="filesname">@f1w3/MMD6UnityTool</div>
+                            </div>
+                        </a>
+                        <a
+                            href="https://ko-fi.com/f1w3_"
+                            class="filesfilewapper"
+                        >
+                            <div class="filesfile">
+                                <div class="filesicon">
+                                    <i class="fa-solid fa-mug-saucer" style="color: #fe86cc;"></i>
+                                </div>
+                                <div class="filesname">Donate me on ko-fi</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="filecontents">
+                    <div class="contentnamewapper">
+                        <div class="contentfilename">
+                            <div class="contenticon">
+                                <i
+                                    class="fa-solid fa-m"
+                                    style="color: #74c0fc"
+                                ></i>
+                            </div>
+                            <div class="contentname">README.md</div>
+                            <div class="contentclose">
+                                <i class="fa-solid fa-xmark"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filecontentwapper">
+                        <div class="filecontent">
+                            <span>About me</span>
+                            <span>--------</span>
+                            <span></span>
+                            <span>- I'm <l id="__age__"></l> years old</span>
+                            <span>- I'm frontend/backend engineer</span>
+                            <span>- I'm currently studying the following languages</span>
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;- typescript(javascript)</span>
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;- C++</span>
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;- C#</span>
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;- Java</span>
+                            <span></span>
+                            <span>- currently focusing on developing the following</span>
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;- [omuapps](https://omuapps.com/)</span>
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;- [kuromoji.js(fork)](https://github.com/f1w3/kuromoji.js/)</span>
+                            <span></span>
+                            <span>Contact</span>
+                            <span>-------</span>
+                            <span>- [Twitter](https://x.com/f1w3_/)</span>
+                            <span>- [Github](https://github.com/f1w3/)</span>
+                            <span>- Email is in preparation.</span>
+                            <span></span>
+                            <span>Other</span>
+                            <span>-----</span>
+                            <span>- [ko-fi](ko-fi.com/f1w3_)</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="repo">
-            <div class="repo-info fadein">Repositories</div>
-            <div class="repo-list"></div>
-        </div>
-        <div class="contact">
-            <div class="contact-info fadein">Contact</div>
-            <div class="contact-child fadein"><a href="https://github.com/javascriptjp" target="_blank">Github : <span class="bold fadein">javascriptjp</span></a></div>
-            <div class="contact-child fadein">Discord : <span class="bold fadein">yuiscript</span></div>
-            <div class="contact-child fadein">X(Twitter) : <span class="bold fadein">soon</span></div>
+        <div class="padding"></div>
+        <div class="snslist">
+            <a href="https://x.com/f1w3_/"> X(Twitter) </a>
+            ・
+            <a href="https://github.com/f1w3/"> Github </a>
         </div>
     </body>
 </html>
