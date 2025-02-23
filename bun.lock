@@ -3,7 +3,7 @@
   "workspaces": {
     "": {
       "dependencies": {
-        "hono": "^4.7.1",
+        "hono": "4.7.2",
         "honox": "^0.1.34",
       },
       "devDependencies": {
@@ -11,7 +11,7 @@
         "@hono/vite-build": "^1.3.0",
         "@hono/vite-dev-server": "^0.18.1",
         "vite": "6.1.0",
-        "wrangler": "^3.109.1",
+        "wrangler": "^3.109.2",
       },
     },
   },

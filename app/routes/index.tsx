@@ -3,9 +3,7 @@ import { createRoute } from 'honox/factory'
 import Link from '../components/Link'
 
 export const GET = createRoute((c) => {
-    const lang = c.get('language')
-    console.log(lang)
-
+    //const lang = c.get('language')
     return c.render(
         <>
             <h2>About me</h2>
