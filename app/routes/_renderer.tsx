@@ -76,6 +76,7 @@ const snowHover = css`
     transition: transform 0.5s ease-in-out;
     margin-right: 10px;
     transform-origin: center;
+    cursor: pointer;
     
     &:hover,
     &:active,
