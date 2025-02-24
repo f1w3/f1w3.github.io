@@ -11,6 +11,7 @@ const linkList = css`
     font-weight: 600;
     font-family: 'Inter', sans-serif;
     align-items: center;
+    padding-top: 0;
 
     a {
         color: #ffffff;
@@ -57,6 +58,10 @@ const headerContainer = css`
     }
 `;
 
+const headerTitle = css`
+    margin-bottom: 0;
+`
+
 const snowHoverAnim = keyframes`
     from {
         transform: rotate(0deg);
@@ -94,11 +99,7 @@ export default jsxRenderer(({ children, title, redirectTime }) => {
                 <meta property="og:site_name" content="f1w3 self introduction page" />
                 <meta property="og:image" content="/tanakachan.png" />
                 <title>{title}</title>
-                <style>{`
-                    body {
-                        background-color: #000000;
-                    }
-                `}</style>
+                <style>{"body{background-color: #000000;}"}</style>
                 <link rel="icon" href="/favicon.ico" />
                 {/* preconnect */}
                 <link rel="preconnect" href="https://cdn.f1w3.me/" />
@@ -119,7 +120,7 @@ export default jsxRenderer(({ children, title, redirectTime }) => {
             </head>
             <body>
                 <header class={headerContainer}>
-                    <h1>
+                    <h1 class={headerTitle}>
                         <span class={snowHover}>❆</span>f1w3.me
                     </h1>
                     <h5 class={linkList}>
