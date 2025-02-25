@@ -1,4 +1,5 @@
-import { css, cx } from "hono/css"
+import { css } from "hono/css"
+import { FC } from "hono/jsx";
 
 const copyCss = css`
     .copy-text {
@@ -13,8 +14,10 @@ const copyCss = css`
     }
 `
 
-export default (props: { children: string; }) => {
+const Copy: FC = ({ children }) => {
     return <span class={copyCss}>
-        {props.children}
+        {children}
     </span>
 }
+
+export default Copy;
